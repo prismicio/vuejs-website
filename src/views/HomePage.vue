@@ -156,4 +156,38 @@ export default {
 .banner-button:hover {
   background: #c8c9cb;
 }
+/* Media Queries */
+@media (max-width: 767px) {
+  .homepage-banner {
+    margin: 0 0 40px;
+    padding: 10em 0 6em;
+  }
+  .banner-title {
+    font-size: 50px;
+    line-height: 50px;
+  }
+  .text-section-2col {
+    -webkit-column-count: 1; /* Chrome, Safari, Opera */
+    -moz-column-count: 1; /* Firefox */
+    column-count: 1;
+    -webkit-column-gap: 40px; /* Chrome, Safari, Opera */
+    -moz-column-gap: 40px; /* Firefox */
+    column-gap: 40px;
+  }
+  .quote {
+    font-size: 20px;
+  }
+  .gallery-item {
+    -webkit-box-flex: 100%;
+    -moz-box-flex:  100%;
+    -webkit-flex:  100%;
+    -ms-flex:  100%;
+    flex: 100%;
+  }
+  .highlight-left,
+  .highlight-right {
+    width: 100%;
+    float: none;
+  }
+}
 </style>
