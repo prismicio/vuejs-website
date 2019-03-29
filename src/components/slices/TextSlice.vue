@@ -27,4 +27,15 @@ export default {
 .text-section-2col p:last-child {
   margin-bottom: 0;
 }
+/* Media Queries */
+@media (max-width: 767px) {
+  .text-section-2col {
+    -webkit-column-count: 1; /* Chrome, Safari, Opera */
+    -moz-column-count: 1; /* Firefox */
+    column-count: 1;
+    -webkit-column-gap: 40px; /* Chrome, Safari, Opera */
+    -moz-column-gap: 40px; /* Firefox */
+    column-gap: 40px;
+  }
+}
 </style>
