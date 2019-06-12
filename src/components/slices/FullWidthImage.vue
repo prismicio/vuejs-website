@@ -1,12 +1,12 @@
 <template>
   <section class='full-width-image content-section'>
-      <prismic-image :field="img"/>
+      <prismic-image :field="slice.primary.image"/>
   </section>
 </template>
 
 <script>
 export default {
-  props: ['img'],
+  props: ['slice'],
   name: 'image-caption-slice'
 }
 </script>

@@ -1,12 +1,12 @@
 <template>
   <section class='content-section quote'>
-    <blockquote class="block-quotation">{{ $prismic.richTextAsPlain(quote) }}</blockquote>
+    <blockquote class="block-quotation">{{ $prismic.richTextAsPlain(slice.primary.quote_text) }}</blockquote>
   </section>
 </template>
 
 <script>
 export default {
-  props: ['quote'],
+  props: ['slice'],
   name: 'quote-slice'
 }
 </script>

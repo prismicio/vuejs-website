@@ -1,21 +1,21 @@
 <template>
   <section class='highlight content-section'>
     <div class="highlight-left">
-      <prismic-rich-text :field="title"/>
-      <prismic-rich-text :field="headline"/>
+      <prismic-rich-text :field="slice.primary.title"/>
+      <prismic-rich-text :field="slice.primary.headline"/>
       <p>
-        <prismic-link :field="link">{{ $prismic.richTextAsPlain(link_label) }}</prismic-link>
+        <prismic-link :field="slice.primary.link">{{ $prismic.richTextAsPlain(slice.primary.link_label) }}</prismic-link>
       </p>
     </div>
     <div class="highlight-right">
-      <prismic-image :field="img"/>
+      <prismic-image :field="slice.primary.featured_image"/>
     </div>
   </section>
 </template>
 
 <script>
 export default {
-  props: ['title','headline','link','link_label','img'],
+  props: ['slice'],
   name: 'image-highlight'
 }
 </script>

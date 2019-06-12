@@ -1,8 +1,8 @@
 <template>
   <section class='image-gallery content-section'>
-    <prismic-rich-text :field="title"/>
+    <prismic-rich-text :field="slice.primary.gallery_title"/>
     <div class="gallery">
-      <div v-for="item in items" :key="item.id" class="gallery-item">
+      <div v-for="item in slice.items" :key="item.id" class="gallery-item">
         <prismic-image :field="item.image"/>
         <prismic-rich-text :field="item.image_description"/>
         <p>
@@ -15,7 +15,7 @@
 
 <script>
 export default {
-  props: ['items','title'],
+  props: ['slice'],
   name: 'image-gallery'
 }
 </script>
