@@ -1,10 +1,10 @@
 <template>
-  <prismic-rich-text class="content-section" :class="'text-section-' + label" :field="text"/>
+  <prismic-rich-text class="content-section" :class="'text-section-' + slice.slice_label" :field="slice.primary.rich_text"/>
 </template>
 
 <script>
 export default {
-  props: ['text','label'],
+  props: ['slice'],
   name: 'text-slice'
 }
 </script>

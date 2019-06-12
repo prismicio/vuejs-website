@@ -18,41 +18,8 @@
       </div>
     </section>
     <div class="container">
-      <!-- Slice section template -->
-      <section v-for="(slice, index) in slices" :key="'slice-' + index">
-        <!-- Text slice component -->
-        <template v-if="slice.slice_type === 'text_section'">
-          <text-slice 
-            :label="slice.slice_label" 
-            :text="slice.primary.rich_text"
-          />
-        </template>
-        <!-- Quote slice component -->
-        <template v-else-if="slice.slice_type === 'quote'">
-          <quote-slice :quote="slice.primary.quote_text"/>
-        </template>
-        <!-- Full Width Image slice component -->
-        <template v-else-if="slice.slice_type === 'full_width_image'">
-          <full-width-image :img="slice.primary.image"/>
-        </template>
-        <!-- Image Gallery slice component -->
-        <template v-else-if="slice.slice_type === 'image_gallery'">
-          <image-gallery 
-            :title="slice.primary.gallery_title" 
-            :items="slice.items"
-          />
-        </template>
-        <!-- Image Highlight slice component -->
-        <template v-else-if="slice.slice_type === 'image_highlight'">
-          <image-highlight 
-            :title="slice.primary.title"
-            :headline="slice.primary.headline"
-            :link="slice.primary.link"
-            :link_label="slice.primary.link_label"
-            :img="slice.primary.featured_image"
-          />
-        </template>
-      </section>
+      <!-- Slices block component -->
+      <slices-block :slices="slices"/>
     </div>
   </section>
 </template>
@@ -60,21 +27,13 @@
 <script>
 // imports for all components
 import HeaderPrismic from '../components/HeaderPrismic.vue'
-import TextSlice from '../components/slices/TextSlice.vue'
-import QuoteSlice from '../components/slices/QuoteSlice.vue'
-import FullWidthImage from '../components/slices/FullWidthImage.vue'
-import ImageGallery from '../components/slices/ImageGallery.vue'
-import ImageHighlight from '../components/slices/ImageHighlight.vue'
+import SlicesBlock from '../components/SlicesBlock.vue'
 
 export default {
   name: 'home-page',
   components: {
     HeaderPrismic,
-    TextSlice,
-    QuoteSlice,
-    FullWidthImage,
-    ImageGallery,
-    ImageHighlight
+    SlicesBlock,
   },
   data () {
     return {
