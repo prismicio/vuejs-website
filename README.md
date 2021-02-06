@@ -1,47 +1,38 @@
-# Prismic Vue.js Example Multi Page Website
+# Prismic Vue.js Multi-Page site with navigation Example
 
 > [Vue.js](https://vuejs.org) example multi page website project with content managed in [Prismic](https://prismic.io)
 
-## Check out our article for a step by step guide to getting this project up and running
+## Check out the dedicated article to get this project up and running
 
 > [Prismic project guide](https://user-guides.prismic.io/examples/vue-js-samples/sample-multi-page-site-with-navigation-in-vuejs)
 
-## How to launch this project in your local environment
+### 1. Install the prismic-cli
 
-Run the following commands:
+```
+npm install -g prismic-cli
+```
 
-``` bash
-npm install
+### 2. Run the theme command
+This will create a new Prismic content repository, setup the custom types, and install the project code
+```
+prismic theme --theme-url https://github.com/prismicio/nextjs-website --conf prismic-configuration.js
+```
+### 3. Run the project
+```
 npm run serve
 ```
 
 Then you can access it at [http://localhost:8080](http://localhost:8080).
 
-
-## Project setup
-``` bash
-npm install
-```
-
-### Compiles and hot-reloads for development
-``` bash
-npm run serve
-```
-
-### Compiles and minifies for production
-``` bash
-npm run build
-```
-
 ## Learn more about using Prismic with Vue.js
 
-> [Prismic Vue.js Documentation](https://prismic.io/docs/vuejs/getting-started/with-the-vuejs-starter)
+> [Prismic Vue.js Documentation](https://prismic.io/docs/technologies/getting-started-vuejs)
 
 ## License
 
 This software is licensed under the Apache 2 license, quoted below.
 
-Copyright 2013-2019 Prismic (http://prismic.io).
+Copyright 2020 [Prismic](http://prismic.io).
 
 Licensed under the Apache License, Version 2.0 (the "License"); you may not use this project except in compliance with the License. You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0.
 
