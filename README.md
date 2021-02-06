@@ -15,7 +15,7 @@ npm install -g prismic-cli
 ### 2. Run the theme command
 This will create a new Prismic content repository, setup the custom types, and install the project code
 ```
-prismic theme --theme-url https://github.com/prismicio/nextjs-website --conf prismic-configuration.js
+prismic theme --theme-url https://github.com/prismicio/nextjs-website --conf public/index.html
 ```
 ### 3. Run the project
 ```
