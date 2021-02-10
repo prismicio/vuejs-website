@@ -1,6 +1,6 @@
-# Prismic Vue.js Multi-Page site with navigation Example
+# Prismic & VueJS Example Multi-Page Site
 
-> [Vue.js](https://vuejs.org) example multi page website project with content managed in [Prismic](https://prismic.io)
+> [VueJS](https://vuejs.org) example multi page website project with content managed in [Prismic](https://prismic.io)
 
 ## Check out the dedicated article to get this project up and running
 
@@ -32,7 +32,7 @@ Then you can access it at [http://localhost:8080](http://localhost:8080).
 
 This software is licensed under the Apache 2 license, quoted below.
 
-Copyright 2020 [Prismic](http://prismic.io).
+Copyright 2021 [Prismic](http://prismic.io).
 
 Licensed under the Apache License, Version 2.0 (the "License"); you may not use this project except in compliance with the License. You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0.
 
