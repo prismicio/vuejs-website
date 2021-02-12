@@ -1,35 +1,15 @@
-# Prismic & VueJS Example Multi-Page Site
+# Prismic & Vue.js Example Multi-Page Site
 
-> [VueJS](https://vuejs.org) example multi page website project with content managed in [Prismic](https://prismic.io)
+> [Vue.js](https://vuejs.org) example multi page website project with content managed in [Prismic](https://prismic.io)
 
 ## Check out the dedicated article to get this project up and running
 
 > [Prismic project guide](https://user-guides.prismic.io/examples/vue-js-samples/sample-multi-page-site-with-navigation-in-vuejs)
 
-### 1. Install the prismic-cli
-
-```
-npm install -g prismic-cli
-```
-
-### 2. Run the theme command
-This will create a new Prismic content repository, setup the custom types, and install the project code
-```
-prismic theme --theme-url https://github.com/prismicio/nextjs-website --conf public/index.html
-```
-### 3. Run the project
-```
-npm run serve
-```
-
-Then you can access it at [http://localhost:8080](http://localhost:8080).
-
-### Deploys made easy with Vercel
-[Sign up to Vercel](https://vercel.com/login) and follow the [deployment documentation](https://vercel.com/docs/platform/deployments) to quickly deploy your project.
 
 ## Learn more about using Prismic with Vue.js
 
-> [Prismic Vue.js Documentation](https://prismic.io/docs/technologies/getting-started-vuejs)
+> [Prismic + Vue.js Documentation](https://prismic.io/docs/technologies/getting-started-vuejs)
 
 ## License
 
